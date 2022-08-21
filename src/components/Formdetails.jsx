@@ -48,24 +48,21 @@ const validationSchema = Yup.object({
 
 
 })
-var arr =[];
-function appendata(arr){
- console.log(arr)
-}
-appendata()
+
 
 const Formdetails= () => {
-  const [formValues,setFormValues]  = useState(appendata)
-  
+  const [formValues,setFormValues]  = useState("")
+  var arr =[]
   
   return (
     <div>
     <Formik initialValues={formValues || initialValues } onSubmit={onSubmit} validationSchema ={validationSchema} enableReinitialize>
       {formik =>{
-
-        // console.log('formik props',formik)
-        arr.push(formik.values)
        
+
+        console.log('formik props',formik)
+        arr.push(formik.values)
+        
        
 
     return (
@@ -121,7 +118,7 @@ const Formdetails= () => {
        
           <h3 className='form-heading'>Contact Details</h3>
           <div className='pesonal-detail'>
-       <div >
+       <div>
         <span>Gardian Name</span>
         <Field as="select" name="title">
         <option value="----">------</option>
@@ -295,7 +292,7 @@ const Formdetails= () => {
 
 
     <div>
-  
+     {console.log(arr)}
    
     </div>
     <div>
