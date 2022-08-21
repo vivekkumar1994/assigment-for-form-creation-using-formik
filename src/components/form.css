@@ -1,0 +1,64 @@
+.form-heading{
+ text-decoration: underline;
+ margin: 20px;
+
+}
+.button{
+   
+    display:flex;
+justify-content: flex-end;
+margin: 5px;
+}
+.button button{
+    margin: 5px;
+}
+.btn1{
+    background-color: red;
+}
+.btn2{
+    background-color: green;
+}
+
+.btn1:hover{
+    background-color: pink;
+    color: black;
+    width:50px
+}
+.btn2:hover{
+    background-color: orange;
+    color: black;
+    width:50px;
+    rotate: 50px;
+}
+
+.form{
+   
+    background-color: aliceblue;
+    border: 1px solid black;
+    width: 60%;
+    height: min-content;
+    border-radius:5px;
+   
+    margin: auto;
+    margin-top: 5px;
+   
+}
+.pesonal-detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+}
+.inner-personal-detail span,input{
+    margin: 10px;
+}
+.inner-personal-detail input{
+    width: 250px;
+}
+.personal-detail-select .personal-detail-span{
+margin: 5px;
+
+}
+.personal-detail-select .personal-detail-span{
+    color: red;
+}
